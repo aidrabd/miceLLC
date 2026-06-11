@@ -109,13 +109,13 @@ python --version
 ### Command Line Usage
 
 ```bash
-python predict.py --input new_compounds.csv --model Random_Forest_model.h5
+python predict.py --input new_compounds.csv --model model.h5
 ```
 
 | Argument  | Description |
 |-----------|-------------|
 | `--input` | Path to your input CSV file (required) |
-| `--model` | Path to the Random Forest model file (default: `Random_Forest_model.h5`) |
+| `--model` | Path to the model file (default: `model.h5`) |
 
 ---
 
@@ -126,7 +126,6 @@ Prepare a `.csv` file with the following columns:
 | Column  | Description |
 |---------|-------------|
 | `SMILES` | Simplified Molecular Input Line Entry System notation of the compound |
-| `pIC50`  | Biological potency value — **leave empty for prediction** |
 
 See `sample.csv` in the repository to prepare your own input file.
 
